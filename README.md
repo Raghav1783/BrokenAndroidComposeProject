@@ -50,3 +50,6 @@ so currently i am maintaining a issynced boolean value for all article and when 
 and updates the cache, i am ignoring these unsyched data.
 But correct logic should be that i should use workmanager and push these unsynched articles in queue and flush them periodically to server and mark them sync and 
 everytime api call happens all synched data is deleted and new data is added to local.
+
+
+Also since api is not providing id for each article , so i was treating "url" and unique ID
